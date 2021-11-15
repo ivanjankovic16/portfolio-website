@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+    </style>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Ivan Jankovic Portfolio Site</title>
+</head>
+<body>
+    <section class="container">
+        <div class="video-container">
+            <video src="./video/pexels-rodnae-productions-7895836.mp4" muted loop autoplay></video>
+        </div>
+        <my-header></my-header>
+        <main>
+            <p class="title">Portfolio Websites:</p>
+            <div class="carousel">               
+                <button class="carousel__button carousel__button--left is-hidden">
+                    <img src="./pictures/icons8-left-arrow-black-64.png" alt="left arrow">
+                </button>
+                
+                <ul class="carousel__track">
+                    <li class="carousel__slide current-slide">
+                        <a class="web-link" href="#website1">
+                            <video class="carousel__video" src="./video/pexels-free-creative-stuff-5561389.mp4" muted loop autoplay></video>
+                            <p class="text">Coming Soon</p>
+                        </a>
+                    </li>
+                    <li class="carousel__slide">
+                        <a class="web-link " href="#website2">
+                            <video class="carousel__video" src="./video/video.mp4" muted loop autoplay></video>
+                            <p class="text">Coming Soon</p>
+                        </a>
+                    </li>
+                    <li class="carousel__slide">
+                        <a class="web-link " href="#website3">
+                            <video class="carousel__video" src="./video/Lines - 5224.mp4" muted loop autoplay></video>
+                            <p class="text">Coming Soon</p>
+                        </a>
+                    </li>
+                </ul>
+                
+                <button class="carousel__button carousel__button--right">
+                    <img src="./pictures/icons8-next-black-64.png" alt="right arrow">
+                </button>
+            </div>
+            <div class="carousel__nav">
+                <button class="carousel__indicator current-slide"></button>
+                <button class="carousel__indicator"></button>
+                <button class="carousel__indicator"></button>
+            </div> 
+        </main>
+        <my-footer></my-footer>
+    </section>
+    <script type="module" src="script.js"></script>  
+</body>
+</html>
