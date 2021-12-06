@@ -14,23 +14,28 @@
 <body>
     <section class="container">
         <div class="video-container">
-            <video src="./video/pexels-rodnae-productions-7895836.mp4" muted loop autoplay></video>
+            <video class="lazy" autoplay muted loop playsinline data-poster="pictures/poster1.png">
+            <source data-src="./video/background-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
         </div>
         <my-header></my-header>
         <main>
-            <div class="main-link-container">
-                <div class="link-container">
-                    <p>Use the link on the right to see my code on GitHub</p>
-                    <a href="https://github.com/ivanjankovic16" rel="noopener noreferrer">Code</a>
-                </div>
-                <div class="link-container">
-                    <p>Do you need experienced marketing advice and/or amazing WordPress webpage design? Visit Dalibor Dujmic website by clicking on this link</p>
-                    <a href="https://www.dd-marketing.biz/" rel="noopener noreferrer">dd-marketing</a>
-                </div>
-                <div class="link-container">
-                    <p>Download my CV, offered in English and Croatian</p>
-                    <a href="./downloadable files/CV_ Jankovic_Ivan (2021).pdf" download>English CV</a>
-                    <a href="./downloadable files/Životopis - Ivan (Front-end, 2021.).pdf" download=>Croatian CV</a>
+            <div class="main-container-link">
+                <div class="main-link-container">
+                    <div class="link-container">
+                        <p>Use the link on the right to see my code on GitHub</p>
+                        <a href="https://github.com/ivanjankovic16" rel="noopener noreferrer">Code</a>
+                    </div>
+                    <div class="link-container">
+                        <p>Do you need experienced marketing advice and/or amazing WordPress webpage design? Visit Dalibor Dujmic website by clicking on this link</p>
+                        <a href="https://www.dd-marketing.biz/" rel="noopener noreferrer">dd-marketing</a>
+                    </div>
+                    <div class="link-container">
+                        <p>Download my CV, offered in English and Croatian</p>
+                        <a href="./downloadable files/CV_ Jankovic_Ivan (2021).pdf" download>English CV</a>
+                        <a href="./downloadable files/Životopis_Ivan (Front-End Developer, 2021.).pdf" download=>Croatian CV</a>
+                    </div>
                 </div>
             </div>
         </main>

@@ -14,49 +14,64 @@
 <body>
     <section class="container">
         <div class="video-container">
-            <video src="./video/pexels-rodnae-productions-7895836.mp4" muted loop autoplay></video>
+            <video class="lazy" autoplay muted loop playsinline data-poster="pictures/poster1.png">
+            <source data-src="./video/background-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
         </div>
         <my-header></my-header>
         <main>
-            <p class="title">Portfolio Websites:</p>
-            <div class="carousel">               
-                <button class="carousel__button carousel__button--left is-hidden">
-                    <img src="./pictures/icons8-left-arrow-black-64.png" alt="left arrow">
-                </button>
+            <div class="main-container-career">
+                <p class="title">Portfolio Websites:</p>
+                <div class="carousel">
+                    <button class="carousel__button carousel__button--left is-hidden">
+                        <img src="./pictures/icons8-left-arrow-black-64.png" alt="left arrow">
+                    </button>
                 
-                <ul class="carousel__track">
-                    <li class="carousel__slide current-slide">
-                        <a class="web-link" href="#website1">
-                            <video class="carousel__video" src="./video/pexels-free-creative-stuff-5561389.mp4" muted loop autoplay></video>
-                            <p class="text">Coming Soon</p>
-                        </a>
-                    </li>
-                    <li class="carousel__slide">
-                        <a class="web-link " href="#website2">
-                            <video class="carousel__video" src="./video/video.mp4" muted loop autoplay></video>
-                            <p class="text">Coming Soon</p>
-                        </a>
-                    </li>
-                    <li class="carousel__slide">
-                        <a class="web-link " href="#website3">
-                            <video class="carousel__video" src="./video/Lines - 5224.mp4" muted loop autoplay></video>
-                            <p class="text">Coming Soon</p>
-                        </a>
-                    </li>
-                </ul>
+                    <ul class="carousel__track">
+                        <li class="carousel__slide current-slide">
+                            <a class="web-link" href="#website1">
+                                <video class="carousel__video lazy" autoplay muted loop playsinline data-poster="pictures/poster2.png">
+                                    <source data-src="./video/website1-video.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                </video>
+                                <p class="text">Coming Soon</p>
+                            </a>
+                        </li>
+                        <li class="carousel__slide">
+                            <a class="web-link " href="#website2">
+                                <video class="carousel__video lazy" autoplay muted loop playsinline data-poster="pictures/poster3.png">
+                                    <source data-src="./video/website2-video.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                </video>
+                                <p class="text">Coming Soon</p>
+                            </a>
+                        </li>
+                        <li class="carousel__slide">
+                            <a class="web-link " href="#website3">
+                                <video class="carousel__video lazy" autoplay muted loop playsinline data-poster="pictures/poster4.png">
+                                    <source data-src="./video/website3-video.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                </video>
+                                <p class="text">Coming Soon</p>
+                            </a>
+                        </li>
+                    </ul>
                 
-                <button class="carousel__button carousel__button--right">
-                    <img src="./pictures/icons8-next-black-64.png" alt="right arrow">
-                </button>
+                    <button class="carousel__button carousel__button--right">
+                        <img src="./pictures/icons8-next-black-64.png" alt="right arrow">
+                    </button>
+                </div>
+                <div class="carousel__nav">
+                    <button class="carousel__indicator current-slide"></button>
+                    <button class="carousel__indicator"></button>
+                    <button class="carousel__indicator"></button>
+                </div>
             </div>
-            <div class="carousel__nav">
-                <button class="carousel__indicator current-slide"></button>
-                <button class="carousel__indicator"></button>
-                <button class="carousel__indicator"></button>
-            </div> 
         </main>
         <my-footer></my-footer>
     </section>
     <script type="module" src="script.js"></script>  
+    <script type="module" src="slider.js"></script>  
 </body>
 </html>

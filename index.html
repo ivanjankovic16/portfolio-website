@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Ivan, Jankovic, Janković, Portfolio, frontend, front-end, developer" />
     <link rel="stylesheet" href="style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
@@ -13,7 +14,10 @@
 </head>
 <section class="container">
     <div class="video-container">
-        <video src="./video/pexels-rodnae-productions-7895836.mp4" muted loop autoplay></video>
+        <video class="lazy" autoplay muted loop playsinline data-poster="pictures/poster1.png">
+            <source data-src="./video/background-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
     <my-header></my-header>
     <main></main>
